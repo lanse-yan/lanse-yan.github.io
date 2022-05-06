@@ -16,6 +16,11 @@
       margin: 0;
     }
 
+    .container {
+      max-width: 640px;
+      margin: auto;
+    }
+
     .header {
       padding: 10px;
       font-size: 20px;
@@ -25,13 +30,14 @@
     }
 
     .danger-text {
-      background-color: #CC0000;
-      color: #fff !important;
+      /* background-color: #CC0000; */
+      color: #CC0000 !important;
+      font-size: 14px;
     }
 
     .warning-text {
-      background-color: #FF6666;
-      color: #fff !important;
+      /* background-color: #FF6666; */
+      color: #FF6666 !important;
     }
 
     .item {
@@ -48,12 +54,14 @@
 
     .item-name {
       padding-right: 2px;
+      width: 60px;
     }
 
     .item-content {
       display: flex;
       flex-wrap: wrap;
-      font-size: 14px;
+      font-size: 12px;
+      flex: 1;
     }
 
     .item-info {
@@ -73,78 +81,81 @@
 </head>
 
 <body>
-  <div class="header">
-    重点指标年度达成预测及风险预警-2022年第13周
-  </div>
-  <div class="item">
-    <div class="item-name">呼入转人工成功率</div>
-    <div class="item-content">
-      <div class="item-info">
-        预警等级<div class=" item-info-value danger-text">高危</div>
+  <div class="container">
+    <div class="header">
+      重点指标年度达成预测及风险预警-2022年第13周
+    </div>
+    <div class="item">
+      <div class="item-name">呼入转人工成功率</div>
+      <div class="item-content">
+        <div class="item-info">
+          预警等级<div class=" item-info-value danger-text">高危</div>
+        </div>
+        <div class="item-info">
+          本年目标<div class="item-info-value">93.00%</div>
+        </div>
+        <div class="item-info">
+          预测目标差值<div class="item-info-value danger-text">-5.62%</div>
+        </div>
+        <div class="item-info">
+          至3/24实际<div class="item-info-value">93.00%</div>
+        </div>
+        <div class="item-info">
+          至3/31实际<div class="item-info-value">93.00%</div>
+        </div>
+        <div class="item-info">
+          至4/7预测<div class="item-info-value">-5.62%</div>
+        </div>
       </div>
-      <div class="item-info">
-        本年目标<div class="item-info-value">93.00%</div>
+    </div>
+    <div class="item">
+      <div class="item-name">呼入转人工成功率</div>
+      <div class="item-content">
+        <div class="item-info">
+          预警等级<div class=" item-info-value">安全</div>
+        </div>
+        <div class="item-info">
+          本年目标<div class="item-info-value">93.00%</div>
+        </div>
+        <div class="item-info">
+          预测目标差值<div class="item-info-value">5.62%</div>
+        </div>
+        <div class="item-info">
+          至3/24实际<div class="item-info-value">93.00%</div>
+        </div>
+        <div class="item-info">
+          至3/31实际<div class="item-info-value">93.00%</div>
+        </div>
+        <div class="item-info">
+          至4/7预测<div class="item-info-value">-5.62%</div>
+        </div>
       </div>
-      <div class="item-info">
-        预测目标差值<div class="item-info-value danger-text">-5.62%</div>
-      </div>
-      <div class="item-info">
-        至3/24实际<div class="item-info-value">93.00%</div>
-      </div>
-      <div class="item-info">
-        至3/31实际<div class="item-info-value">93.00%</div>
-      </div>
-      <div class="item-info">
-        至4/7预测<div class="item-info-value">-5.62%</div>
+    </div>
+    <div class="item">
+      <div class="item-name">呼入转人工成功率</div>
+      <div class="item-content">
+        <div class="item-info">
+          预警等级<div class=" item-info-value">安全</div>
+        </div>
+        <div class="item-info">
+          本年目标<div class="item-info-value">93.00%</div>
+        </div>
+        <div class="item-info">
+          预测目标差值<div class="item-info-value">5.62%</div>
+        </div>
+        <div class="item-info">
+          至3/24实际<div class="item-info-value">93.00%</div>
+        </div>
+        <div class="item-info">
+          至3/31实际<div class="item-info-value">93.00%</div>
+        </div>
+        <div class="item-info">
+          至4/7预测<div class="item-info-value">-5.62%</div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="item">
-    <div class="item-name">呼入转人工成功率</div>
-    <div class="item-content">
-      <div class="item-info">
-        预警等级<div class=" item-info-value">安全</div>
-      </div>
-      <div class="item-info">
-        本年目标<div class="item-info-value">93.00%</div>
-      </div>
-      <div class="item-info">
-        预测目标差值<div class="item-info-value">5.62%</div>
-      </div>
-      <div class="item-info">
-        至3/24实际<div class="item-info-value">93.00%</div>
-      </div>
-      <div class="item-info">
-        至3/31实际<div class="item-info-value">93.00%</div>
-      </div>
-      <div class="item-info">
-        至4/7预测<div class="item-info-value">-5.62%</div>
-      </div>
-    </div>
-  </div>
-  <div class="item">
-    <div class="item-name">呼入转人工成功率</div>
-    <div class="item-content">
-      <div class="item-info">
-        预警等级<div class=" item-info-value">安全</div>
-      </div>
-      <div class="item-info">
-        本年目标<div class="item-info-value">93.00%</div>
-      </div>
-      <div class="item-info">
-        预测目标差值<div class="item-info-value">5.62%</div>
-      </div>
-      <div class="item-info">
-        至3/24实际<div class="item-info-value">93.00%</div>
-      </div>
-      <div class="item-info">
-        至3/31实际<div class="item-info-value">93.00%</div>
-      </div>
-      <div class="item-info">
-        至4/7预测<div class="item-info-value">-5.62%</div>
-      </div>
-    </div>
-  </div>
+
 </body>
 
 </html>
