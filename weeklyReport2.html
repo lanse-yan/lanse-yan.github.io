@@ -85,7 +85,8 @@
     <div class="header">
       重点指标年度达成预测及风险预警-2022年第13周
     </div>
-    <div class="item">
+    <div class="list"></div>
+    <!-- <div class="item">
       <div class="item-name">呼入转人工成功率</div>
       <div class="item-content">
         <div class="item-info">
@@ -153,9 +154,265 @@
           至4/7预测<div class="item-info-value">-5.62%</div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
+  <script>
+    // var xhr = new XMLHttpRequest();
+    // xhr.open('');
+    // xhr.send();
+    // xhr.onreadystatechange = function(){
+    //   if (xhr.readyState == 4 || xhr.status == 200){
 
+    //   }
+    // }
+    var result = {
+      "msg": "查询周报数据消息",
+      "code": 200,
+      "data": [
+        {
+          "valid": true,
+          "busiType": "呼入转人工成功率",
+          "busiName": "寿险普客",
+          "yearTarget": 93,
+          "dataDay": "2022-04-28T00:00:00.000+0800",
+          "yearAccReachDayNum": 57,
+          "weekAccReachDayNum": 7,
+          "accYearSuccRate": 88.84,
+          "pre13DaySuccRate": 87.89,
+          "pre7DaySuccRate": 88.38,
+          "nextWeekPredictSuccRate": 89.35153,
+          "comprehensiveScore": 1,
+          "riskLevel": "危险",
+          "predictSuccRateDiff": -3.648468,
+          "kpiPrincipal": [
+            "zhougangnj",
+            "jinli",
+            "jisy"
+          ]
+        },
+        {
+          "valid": true,
+          "busiType": "呼入转人工成功率",
+          "busiName": "寿险高客",
+          "yearTarget": 98,
+          "dataDay": "2022-04-28T00:00:00.000+0800",
+          "yearAccReachDayNum": 115,
+          "weekAccReachDayNum": 8,
+          "accYearSuccRate": 99.34,
+          "pre13DaySuccRate": 99.35,
+          "pre7DaySuccRate": 99.34,
+          "nextWeekPredictSuccRate": 99.33461,
+          "comprehensiveScore": 1,
+          "riskLevel": "安全",
+          "predictSuccRateDiff": 1.33461,
+          "kpiPrincipal": [
+            "huangkq",
+            "yaomei03",
+            "yaowz"
+          ]
+        },
+        {
+          "valid": true,
+          "busiType": "呼入转人工成功率",
+          "busiName": "养老",
+          "yearTarget": 97,
+          "dataDay": "2022-04-28T00:00:00.000+0800",
+          "yearAccReachDayNum": 54,
+          "weekAccReachDayNum": 7,
+          "accYearSuccRate": 93.35,
+          "pre13DaySuccRate": 92.75,
+          "pre7DaySuccRate": 93.02,
+          "nextWeekPredictSuccRate": 93.67307,
+          "comprehensiveScore": 1,
+          "riskLevel": "危险",
+          "predictSuccRateDiff": -3.3269272,
+          "kpiPrincipal": [
+            "yuanhaiyan",
+            "wangjinhui",
+            "yushan"
+          ]
+        },
+        {
+          "valid": true,
+          "busiType": "呼入转人工成功率",
+          "busiName": "微保",
+          "yearTarget": 95,
+          "dataDay": "2022-04-28T00:00:00.000+0800",
+          "yearAccReachDayNum": 116,
+          "weekAccReachDayNum": 8,
+          "accYearSuccRate": 99.19,
+          "pre13DaySuccRate": 99.23,
+          "pre7DaySuccRate": 99.19,
+          "nextWeekPredictSuccRate": 99.168465,
+          "comprehensiveScore": 1,
+          "riskLevel": "安全",
+          "predictSuccRateDiff": 4.1684647,
+          "kpiPrincipal": [
+            "zhougangnj",
+            "sijia01",
+            "ancl01"
+          ]
+        },
+        {
+          "valid": true,
+          "busiType": "呼入转人工成功率",
+          "busiName": "非车财",
+          "yearTarget": 95,
+          "dataDay": "2022-04-28T00:00:00.000+0800",
+          "yearAccReachDayNum": 118,
+          "weekAccReachDayNum": 8,
+          "accYearSuccRate": 98.91,
+          "pre13DaySuccRate": 98.86,
+          "pre7DaySuccRate": 98.88,
+          "nextWeekPredictSuccRate": 98.93693,
+          "comprehensiveScore": 1,
+          "riskLevel": "安全",
+          "predictSuccRateDiff": 3.9369278,
+          "kpiPrincipal": [
+            "zhougangnj",
+            "sijia01",
+            "ancl01"
+          ]
+        },
+        {
+          "valid": true,
+          "busiType": "呼入转人工成功率",
+          "busiName": "健康险",
+          "yearTarget": 95,
+          "dataDay": "2022-04-28T00:00:00.000+0800",
+          "yearAccReachDayNum": 117,
+          "weekAccReachDayNum": 8,
+          "accYearSuccRate": 98.88,
+          "pre13DaySuccRate": 98.98,
+          "pre7DaySuccRate": 98.92,
+          "nextWeekPredictSuccRate": 98.82615,
+          "comprehensiveScore": 2,
+          "riskLevel": "安全",
+          "predictSuccRateDiff": 3.826149,
+          "kpiPrincipal": [
+            "zhougangnj",
+            "sijia01",
+            "ancl01"
+          ]
+        },
+        {
+          "valid": true,
+          "busiType": "呼入转人工成功率",
+          "busiName": "车险",
+          "yearTarget": 98,
+          "dataDay": "2022-04-28T00:00:00.000+0800",
+          "yearAccReachDayNum": 109,
+          "weekAccReachDayNum": 8,
+          "accYearSuccRate": 99.2,
+          "pre13DaySuccRate": 99.18,
+          "pre7DaySuccRate": 99.2,
+          "nextWeekPredictSuccRate": 99.21076,
+          "comprehensiveScore": 1,
+          "riskLevel": "安全",
+          "predictSuccRateDiff": 1.210762,
+          "kpiPrincipal": [
+            "zhougangnj",
+            "liuheng11",
+            "ancl01"
+          ]
+        },
+        {
+          "valid": true,
+          "busiType": "呼入转人工成功率",
+          "busiName": "拜博",
+          "yearTarget": 95,
+          "dataDay": "2022-04-28T00:00:00.000+0800",
+          "yearAccReachDayNum": 90,
+          "weekAccReachDayNum": 7,
+          "accYearSuccRate": 96.54,
+          "pre13DaySuccRate": 96.51,
+          "pre7DaySuccRate": 96.44,
+          "nextWeekPredictSuccRate": 96.55615,
+          "comprehensiveScore": 1,
+          "riskLevel": "安全",
+          "predictSuccRateDiff": 1.5561523,
+          "kpiPrincipal": [
+            "dengjie05",
+            "shining01",
+            "liyj05"
+          ]
+        },
+        {
+          "valid": true,
+          "busiType": "呼入转人工成功率",
+          "busiName": "医疗",
+          "yearTarget": 95,
+          "dataDay": "2022-04-28T00:00:00.000+0800",
+          "yearAccReachDayNum": 87,
+          "weekAccReachDayNum": 7,
+          "accYearSuccRate": 96.1,
+          "pre13DaySuccRate": 96.05,
+          "pre7DaySuccRate": 96.07,
+          "nextWeekPredictSuccRate": 96.12692,
+          "comprehensiveScore": 1,
+          "riskLevel": "安全",
+          "predictSuccRateDiff": 1.1269226,
+          "kpiPrincipal": [
+            "dengjie05",
+            "shining01",
+            "liyj05"
+          ]
+        },
+        {
+          "valid": true,
+          "busiType": "呼入转人工成功率",
+          "busiName": "之家",
+          "yearTarget": 95,
+          "dataDay": "2022-04-28T00:00:00.000+0800",
+          "yearAccReachDayNum": 72,
+          "weekAccReachDayNum": 5,
+          "accYearSuccRate": 94.73,
+          "pre13DaySuccRate": 94.62,
+          "pre7DaySuccRate": 94.72,
+          "nextWeekPredictSuccRate": 94.78924,
+          "comprehensiveScore": 1,
+          "riskLevel": "危险",
+          "predictSuccRateDiff": -0.21076202,
+          "kpiPrincipal": [
+            "dengjie05",
+            "shining01",
+            "liyj05"
+          ]
+        }
+      ]
+    }
+
+    var htmlArr = []
+    result.data.forEach(item => {
+      var html =
+        `
+      <div class="item">
+      <div class="item-name">${item.busiType + '-' + item.busiName}</div>
+      <div class="item-content">
+        <div class="item-info">
+          预警等级<div class=" item-info-value ${item.riskLevel == '危险' ? 'danger-text' : ''}">${item.riskLevel}</div>
+        </div>
+        <div class="item-info">
+          本年目标<div class="item-info-value">${item.yearTarget + '%'}</div>
+        </div>
+        <div class="item-info">
+          预测目标差值<div class="item-info-value ${item.predictSuccRateDiff < 0 ? 'danger-text' : ''}">${item.predictSuccRateDiff + '%'}</div>
+        </div>
+        <div class="item-info">
+          至3/24实际<div class="item-info-value">${item.pre13DaySuccRate + '%'}</div>
+        </div>
+        <div class="item-info">
+          至3/31实际<div class="item-info-value">${item.pre7DaySuccRate + '%'}</div>
+        </div>
+        <div class="item-info">
+          至4/7预测<div class="item-info-value">${item.nextWeekPredictSuccRate + '%'}</div>
+        </div>
+      </div>
+    </div>`
+      htmlArr.push(html)
+    })
+    document.querySelector('.container .list').innerHTML = htmlArr.join('');
+  </script>
 </body>
 
 </html>
