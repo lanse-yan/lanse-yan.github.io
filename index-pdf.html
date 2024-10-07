@@ -39,7 +39,6 @@
           const successful = document.execCommand('copy');
           const msg = successful ? '文本已成功复制到剪贴板（使用Fallback方法）' : '无法复制文本';
           console.log(msg);
-          alert(msg)
         } catch (err) {
           console.error('Fallback方法失败', err);
         }
@@ -50,6 +49,7 @@
       document.querySelector('#copyBtn').addEventListener('click', function() {
         // 示例调用  
         copyTextToClipboard("https://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf");
+        alert(msg)
       })
   </script>
 </body>
