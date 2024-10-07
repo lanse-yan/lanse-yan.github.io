@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>微信下载pdf</title>
+</head>
+<body>
+  <button id="copyBtn">复制链接在浏览器打开</button>
+  <script>
+    // 复制文本到剪贴板  
+      async function copyTextToClipboard(text) {
+        if (navigator.clipboard) {
+          // 使用Clipboard API  
+          await navigator.clipboard.writeText(text);
+          console.log('文本已成功复制到剪贴板');
+        } else {
+          // Clipboard API不可用，使用其他方法（如textarea）  
+          console.error('Clipboard API不可用');
+          fallbackCopyTextToClipboard(text);
+        }
+      }
+
+      // Fallback方法：使用textarea  
+      function fallbackCopyTextToClipboard(text) {
+        const textArea = document.createElement("textarea");
+        textArea.value = text;
+
+        // 避免在页面上可见  
+        textArea.style.top = "0";
+        textArea.style.left = "0";
+        textArea.style.position = "fixed";
+
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+
+        try {
+          const successful = document.execCommand('copy');
+          const msg = successful ? '文本已成功复制到剪贴板（使用Fallback方法）' : '无法复制文本';
+          console.log(msg);
+        } catch (err) {
+          console.error('Fallback方法失败', err);
+        }
+
+        document.body.removeChild(textArea);
+      }
+
+      document.querySelector('#copyBtn').addEventListener('click', function() {
+        // 示例调用  
+        copyTextToClipboard("https://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf");
+      })
+  </script>
+</body>
+</html>
